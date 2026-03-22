@@ -1,0 +1,93 @@
+/* Base_Guys.css - FIXED MASTER UI - DO NOT OVERRIDE LAYOUT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --bg-dark: #050505;
+    --accent-orange: #EE8A51;
+    --accent-glow: rgba(238, 138, 81, 0.4);
+    --text-white: #ffffff;
+    --text-dim: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: blur(25px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+body {
+    background-color: var(--bg-dark); color: var(--text-white);
+    font-family: 'Roboto', sans-serif; min-height: 100vh; overflow-x: hidden;
+}
+
+/* --- Global Background --- */
+.dynamic-background {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+    background: radial-gradient(circle at top right, #151515 0%, #050505 100%);
+}
+
+/* --- Rigid Master Layout --- */
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 2.5rem;
+    gap: 2.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden; /* Lock the layout */
+}
+
+/* --- Unified Master Sidebar --- */
+.sidebar-Guys {
+    width: 300px; flex-shrink: 0;
+    background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border); border-radius: 20px;
+    padding: 3rem 1.5rem; display: flex; flex-direction: column; align-items: center;
+    height: 100%; /* Important: Match main wrapper height minus padding */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.sidebar-header { text-align: center; margin-bottom: 2.5rem; }
+#icon { width: 120px; height: auto; filter: drop-shadow(0 0 15px var(--accent-glow)); margin-bottom: 1rem; }
+.logo-text { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 900; color: var(--accent-orange); letter-spacing: -1px; line-height: 1; }
+.tagline { font-size: 0.75rem; color: var(--text-dim); letter-spacing: 2px; margin-top: 8px; }
+
+.nav-menu { width: 100%; }
+.nav-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.nav-list li a {
+    display: block; padding: 0.8rem 1.2rem; border-radius: 12px;
+    color: var(--text-dim); font-family: 'Outfit', sans-serif; font-weight: 700;
+    text-decoration: none; letter-spacing: 2px; font-size: 0.8rem; transition: 0.3s ease;
+}
+.nav-list li a:hover, .nav-list li a.active {
+    background: rgba(238, 138, 81, 0.1); color: var(--accent-orange);
+    transform: translateX(5px); box-shadow: -5px 0 15px var(--accent-glow);
+}
+
+/* --- Unified Content Panel (STRICT) --- */
+.content-area-Guys {
+    flex-grow: 1;
+    height: 100%; /* Lock height */
+    background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border); border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable scrolling only inside the panel if content is long */
+}
+
+/* Typography Global */
+.title-big { font-family: 'Outfit', sans-serif; font-weight: 900; text-transform: uppercase; }
+.section-heading { font-size: 3.5rem; margin-bottom: 2rem; }
+.section-heading span { color: var(--accent-orange); text-shadow: 0 0 30px var(--accent-glow); }
+
+/* Animations */
+.fade-in { animation: fadeIn 0.8s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Responsive Master */
+@media (max-width: 1100px) {
+    .main-wrapper { flex-direction: column; padding: 1.5rem; gap: 1.5rem; height: auto; overflow: visible; }
+    .sidebar-Guys { width: 100%; height: auto; position: static; }
+    .content-area-Guys { width: 100%; padding: 2rem; min-height: 80vh; }
+}

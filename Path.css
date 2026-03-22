@@ -1,248 +1,31 @@
-/*body index*/
-body{
-	background-color: #000000;
+/* Path.css - Page-Specific Content Only */
+
+.waveform-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.track-waveform {
+    display: flex; align-items: center; gap: 2rem; padding: 1.5rem 2rem;
+    background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px;
 }
 
-/* div menu items */
-#item-princi_menu{
-	color: white; 
-	width: 500px; 
-	outline: 2px solid rgba(255, 255, 255, 0.5);
-	height: 720px;
-	position: relative;
-	margin-left: 5px; 
-	top: 10px; 
-}
+.track-header { min-width: 150px; }
+.track-id { color: var(--accent-orange); font-weight: 900; font-size: 0.8rem; display: block; margin-bottom: 0.3rem; }
+.track-header h3 { font-size: 1.3rem; color: white; }
 
-/*img logo */
-#icon{
-	width: 230px; 
-	height: 250px;
-	position: relative; 
-	margin-left: 130px; 
-	top: 20px;
-}
+.visualizer-bars { flex: 1; display: flex; align-items: center; gap: 5px; height: 40px; }
+.bar { flex: 1; background: var(--glass-border); border-radius: 5px; height: 30%; transition: 0.3s; }
+.track-waveform:hover .bar { background: var(--accent-orange); box-shadow: 0 0 10px var(--accent-glow); }
 
-/* title THE GUYS */ 
-#title-theguys{
-	font-family: 'Roboto', sans-serif; 
-	position: relative;
-	text-align: center;
-	font-size: 50px; 
-	color: rgb(238, 138, 81);
-}
+/* Sample Heights */
+.bar:nth-child(1) { height: 40%; }
+.bar:nth-child(2) { height: 70%; }
+.bar:nth-child(3) { height: 90%; }
+.bar:nth-child(4) { height: 50%; }
 
-/*comment text top title*/
-p[name$="ress"]{
-	font-family: 'Oswald', sans-serif;
-	position: relative;
-	text-align: center; 
-	font-size: 20px; 
-	bottom: 20px;
-	color: rgb(140,141, 148);
-}
+.track-stats { text-align: right; }
+.duration { font-size: 1.2rem; font-weight: 900; }
+.genre { font-size: 0.7rem; color: var(--text-dim); }
 
-/*LISTA CONTENIDO ITEMS MENU*/
-ul[name^="list"]{
-	list-style: none;
-	position: relative; 
-	text-align: center;
-	font-size: 25px; 
-	font-family: 'Titillium web', sans-serif; 
-	bottom: 30px;
-}
-
-/*Enlace menu #01 #07*/
-
-/*Subrayado a enlace item #01 */
-.item-01{
-	text-decoration: none;
-}
-
-/*Color blanco texto item #01*/
-#list-1{
-	color: white;
-}
-/*Hover naranja item #01*/
-#list-1:hover{
-	color: #EE8A51; 
-
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #02*/
-.item-02{
-	text-decoration: none;
-}
-
-/*Color blanco texto item #02*/
-#list-2{
-	color: white;
-}
-/*Hover naranja item #02*/
-#list-2:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #03*/
-.item-03{
-	text-decoration: none;
-}
-
-/*Color blanco texto item #03*/
-#list-3{
-	color: white;
-}
-/*Hover naranja item #03*/
-#list-3:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #04*/
-.item-04{
-	text-decoration: none;
-}
-
-/*COlor blanco texto item #04*/
-#list-4{
-	color: white;
-}
-/*Hover naranja item #04*/
-#list-4:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #05*/
-.item-05{
-	text-decoration: none;
-}
-
-/*Color blanco texto item #05*/
-#list-5{
-	color: white;
-}
-/*Hover naranja item #05*/
-#list-5:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #06*/
-.item-06{
-	text-decoration: none;
-}
-/*COlor blanco texto item #06*/
-#list-6{
-	color: white;
-}
-/*Hover naranja  item #06*/
-#list-6:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-/*Subrayado a enlace item #07*/
-.item-07{
-	text-decoration: none;
-}
-/*COlor blanco texto item #07*/
-#list-7{
-	color: white;
-}
-/*Hover naranja  item #07*/
-#list-7:hover{
-	color: #EE8A51;
-}
-
-/*========================================*/
-
-
-/*END OF THE ITEMS AND MENU PRINCIPAL*/
-
-/*DIV SECOND CONTEXT INICIO*/
-#info-ini-tiem_2{
-	position: relative;
-	background-color: #000000;
-	width: 1040px;
-	height: 720px;
-	margin-left: 530px;
-	bottom: 15px;
-	position: absolute;
-}
-
-/*line 01 title*/
-hr[name*="sl"]{
-	border: 1px solid rgba(238, 138, 81, 0.9); 
-	width: 110px;
-	position: relative;
-	margin-left: 40px; 
-	float: left;
-}
-
-/*text middle hrs*/
-#title-DISCOS{
-	color: white;
-	font-size: 55px;
-	font-family: sans-serif;
-	position: relative;
-	margin-left: 40px;
-	bottom: 40px;
-}
-
-/*line 02 title*/
-hr[name*="sp"]{
-	border: 1px solid rgba(238, 138, 81, 0.9);
-	width: 110px;
-	position: relative;
-	margin-left: 40px;
-	bottom:90px;
-}
-
-/*text fecha time*/
-#TITLE-musica-en-español{
-	font-family: sans-serif;
-	color: rgb(238, 138, 81);
-	position: relative;
-	font-size: 20px;
-	bottom: 100px;
-	margin-left: 40px;
-}
-
-/*comment text sub */
-#text-1{
-	color: white;
-	font-size: 20px;
-	position: relative;
-	margin-left: 30px;
-	font-family: 'Montserrat', sans-serif;
-	bottom: 90px;
-}
-
-/*img rock guitar*/
-#rock{
-	width:500px;
-	height: 300px;
-	position: relative;
-	bottom: 50px;
-	margin-left: 30px;
-}
-
-/*lista de song */
-.list-song{
-	color: white;
-	font-size: 26px;
-	font-family: 'Montserrat', sans-serif;
-	position: relative;
-	margin-left: 600px;
-	bottom: 400px;
-	list-style: none;
+@media (max-width: 768px) {
+    .track-waveform { flex-direction: column; align-items: stretch; text-align: center; }
+    .track-stats { text-align: center; }
 }

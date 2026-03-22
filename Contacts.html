@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>CONTACTS</title>
-		<meta charset="utf-8">
-		<meta name="author" content="The guys">
-		<meta name="description" content="It's a page that talks about a band that's starting out in the world of music">
-		<meta name="keywords" content="THe guys, band, Colombia, music">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="Assets/icon.png" rel="icon">
-		<link rel="stylesheet" href="Contacts.css">
-	</head>
-	
+<head>
+    <meta charset="utf-8">
+    <title>Contacts | THE GUYS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Base_Guys.css">
+    <link rel="stylesheet" href="Contacts.css">
+    <link href="Assets/icon.png" rel="icon">
+</head>
 <body>
-	<div id="item-princi_menu">	
-		<img id="icon" src="Assets/horn.png" alt="icon">
-			<h1 id="title-theguys">THE GUYS</h1>
-				<p name="text-adress">The latest news<br>from the world of music</p>
 
-<!-- LISTA DE ELEMENTOS MENU PRINCIPAL // AGREE CSS HOVER <LI>  -->
+    <div class="dynamic-background"></div>
 
-			<ul name="list-items_list">
-				
-				<a class="item-01" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Inicio.html" target="_self">
-					<li id="list-1">HOME</li></a>
+    <div class="main-wrapper">
+        
+        <aside class="sidebar-Guys">
+            <header class="sidebar-header">
+                <img id="icon" src="Assets/horn.png" alt="GUYS Logo">
+                <h1 class="logo-text">THE GUYS</h1>
+                <p class="tagline">The latest news from<br>the world of music</p>
+            </header>
 
-						<a class="item-02" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Todo%20sobre%20nosotros.html" target="_self">
-							<li id="list-2">ABOUT US</li></a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Discography.html">DISCOGRAPHY</a></li>
+                    <li><a href="Path.html">PATH</a></li>
+                    <li><a href="Record Studio.html">RECORD STUDIO</a></li>
+                    <li><a href="Tours and Concerts.html">TOURS & CONCERTS</a></li>
+                    <li><a href="Contacts.html" class="active">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-							<a class="item-03" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Discografia.html" target="_self">
-									<li id="list-3">DISCOGRAPHY</li></a>
+        <main class="content-area-Guys fade-in">
+            <h2 class="title-big section-heading">Connect <span>With Us</span></h2>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Legendary Fan">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Tell us something epic..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn title-big">SEND MESSAGE</button>
+            </form>
+        </main>
+    </div>
 
-								<a class="item-04" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Tayectoria.html" target="_self">
-									<li id="list-4">PATH</li></a>
-
-									<a class="item-05" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Estudio%20Discografico.html" target="_self">
-										<li id="list-5">RECORD STUDIO</li></a>
-
-										<a class="item-06" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Giras%20y%20Conciertos.html" target="_self">
-											<li id="list-6">TOURS AND CONCERTS</li></a>
-
-											<a class="item-07" href="file:///C:/Users/juansebastian/Downloads/$STACK2$/GEEK/GUYS%20WEB/Contactos.html" target="_self">
-												<li id="list-7">CONTACTS</li></a>
-			</ul>
-	</div>
-
-<!-- INFO TEXTO WEB INICIO  -->
-
-<div id="info-ini-tiem_2">
-		<hr name="line-ls1THEGUYS">
-				<h2 id="title-Estudio">Contact us</h2>
-		<hr name="line-ls2THEGUYS">
-			<p id="text-fer">Here are our social networks where they can find us.</p>
-				<h2 id="text-siguenos">Follow us at:</h2>
-
-		<ul id="list-redes">
-				<li class="cont">
-					<span>FACEBOOK:</span>
-					<a class="cls" href="#"><span class="Reds">THE GUYS</span></a>
-				</li>
-				<br>
-				<li class="cont">
-					<span>INSTAGRAM:</span>
-					<a class="cls" href="#"><span class="Reds">the.guys</span></a>
-				</li>
-				<br>
-				<li class="cont">
-					<span>TWITTER:</span>
-					<a class="cls" href="#"><span class="Reds">@the_guys_band</span></a>
-				</li>
-				<br>
-				<li class="cont">
-					<span>YOUTUBE:</span>
-					<a class="cls" href="#"><span class="Reds">The Guys</span></a>
-				</li>
-			<br>
-		</ul>
-	</div>
 </body>
-</html>		
+</html>
