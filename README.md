@@ -4,7 +4,7 @@
 ## Starting 🚩
 _This project was born from a friend's idea to create his own band composed of his friends. It explains how the band was born and its expectations for the future._
 
-<video src="https://github.com/Trex-Codes/GUYS-WEB/raw/master/Assets/Main.mp4" controls="controls" muted="muted" width="100%"></video>
+![Demo GUYS-WEB](https://github.com/Trex-Codes/GUYS-WEB/raw/master/Assets/Main.gif)
 
 ## Architecture & Installation 🔧
 _The project is built as a **Modern One-Page Application**._
